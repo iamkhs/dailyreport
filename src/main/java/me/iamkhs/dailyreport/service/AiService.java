@@ -3,7 +3,6 @@ package me.iamkhs.dailyreport.service;
 import com.google.genai.Client;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @Service
 public class AiService {
@@ -11,7 +10,7 @@ public class AiService {
     @Value("${GEMINI_API_KEY}")
     private String APIKEY;
 
-    public String summarizeCommits(@RequestBody String commits) {
+    public String summarizeCommits(String commits) {
 
         String prompt =
                 "You are a professional software engineer who writes concise, clear, and professional daily work reports. \n" +
