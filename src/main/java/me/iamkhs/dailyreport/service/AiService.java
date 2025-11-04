@@ -23,6 +23,7 @@ public class AiService {
                         "- Include the action performed and the module or feature affected if possible.\n" +
                         "- Do not add extra commentary, just the summarized tasks.\n" +
                         "- If the commits empty then response no commit found something like this but dont do extra" +
+                        "- If something commit like merge with while when merging with another branch just ignore it\n" +
                         "Here are the commits:\n" + commits;
 
         try {
